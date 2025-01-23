@@ -15,7 +15,7 @@
 ## Requirements
 
 - **ROS 2 Humble**: The latest version of the Robot Operating System.
-- **Gamepad**: For this project, I used a PS4 controller to move a differential drive robot.
+- **Gamepad**: For this project, I used a PS4 controller to teleoperate a differential drive robot. For more information refer to [this page](https://index.ros.org/p/joy/).
 
 ---
 
@@ -59,7 +59,7 @@ You can enable turbo mode by setting the line below to ```true``` in the ```conf
 ```yaml
 require_enable_button: false
 ```
-You can enable turbo mode and normal speed mode by using buttons on your gamepad. Edit the following lines of code in the config/joystick.yaml file according to your gamepad's button numbers. On my PS4 controller, these buttons correspond to ```square``` and ```circle```.
+You can enable turbo mode and normal speed mode by using the buttons on your gamepad. Edit the following lines of code in the ```config/joystick.yaml``` file according to your gamepad's button numbers. On my PS4 controller, these buttons correspond to ```square``` and ```triangle```.
 ```yaml
   enable_button: 2
   enable_turbo_button: 3
